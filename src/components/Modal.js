@@ -12,8 +12,8 @@ const Modal = ({
       <View style={styles.modalContainer}>
         <View style={styles.modalStyle}>
           <Text style={styles.modalTextStyle}>{itemSelected}</Text>
-          <Button title="Delete" onPress={() => actionDeleteItem()} />
-          <Button title="Dismiss" onPress={() => onDismissModal(false)} />
+          <Button title="Delete" onPress={() => actionDeleteItem()} color='red'/>
+          <Button title="Dismiss" onPress={() => onDismissModal(false)} color='green'/>
         </View>
       </View>
     </NewModal>
@@ -28,6 +28,9 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginTop: 22,
+  },
+  colorBtn:{
+    color: 'red',
   },
   modalStyle: {
     margin: 20,
